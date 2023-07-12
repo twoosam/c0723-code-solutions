@@ -23,11 +23,11 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you break a string up into an array?
   The split() method.
 - Do string methods change the original string? How would you check if you weren't sure?
-  Yes they do. You can check with the cosnole log.
+  No, it creates a new string.
 - Roughly how many string methods are there according to the MDN Web docs?
   Around 60
 - Is the return value of a function or method useful in every situation?
-  Yes because the return statement ends function execution.
+  No, we do not always want or need to return a value of a function.
 - Roughly how many array methods are there according to the MDN Web docs?
   Around 45
 - What three-letter acronym should you always include in your Google search about a JavaScript method or CSS property?
