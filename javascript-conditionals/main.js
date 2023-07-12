@@ -60,7 +60,7 @@ function categorizeAcidity(pH) {
     return 'acid';
   } else if (pH === 7) {
     return 'neutral';
-  } else if (pH < 14) {
+  } else if (pH <= 14) {
     return 'base';
   } else {
     return 'invlaid pH level';
@@ -71,39 +71,29 @@ function introduceWarnerBro(name) {
   switch (name) {
     case 'yakko':
     case 'wakko':
-      console.log("Wer'e the warner brothers!");
-      break;
+      return "Wer'e the warner brothers!";
     case 'dot':
-      console.log("I'm cute!");
-      break;
+      return "I'm cute!";
     default:
-      console.log('Goodnight Everyone!');
+      return 'Goodnight Everyone!';
   }
 }
 
 function recommendMovie(genre) {
   switch (genre) {
     case 'action':
-      console.log('Mission Impossible');
-      break;
+      return 'Mission Impossible';
     case 'comedy':
-      console.log('Kicking and Screaming');
-      break;
+      return 'Kicking and Screaming';
     case 'horror':
-      console.log('Hereditary');
-      break;
+      return 'Hereditary';
     case 'drama':
-      console.log('Minari');
-      break;
+      return 'Minari';
     case 'musical':
-      console.log('La La Land');
-      break;
+      return 'La La Land';
     case 'sci-fi':
-      console.log('Interstellar');
-      break;
+      return 'Interstellar';
     default:
-      console.log(
-        'Genre not recognized. Choose between action, comedy, horror, drama, musical, or sci-fi.'
-      );
+      return 'Genre not recognized. Choose between action, comedy, horror, drama, musical, or sci-fi.';
   }
 }
