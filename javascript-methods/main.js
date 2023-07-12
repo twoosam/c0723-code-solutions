@@ -6,7 +6,7 @@ const maximumValue = Math.max(num1, num2, num3);
 console.log('maximumValue is:', maximumValue);
 
 const heroes = ['Iron Man', 'Captain America', 'Batman', 'Spiderman'];
-let randomNumber = Math.random(heroes);
+let randomNumber = Math.random();
 randomNumber = randomNumber * heroes.length;
 const randomIndex = Math.floor(randomNumber);
 console.log('randomIndex:', randomIndex);
