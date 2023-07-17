@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What HTML tag is used to link to another website?
-  href tag
+  <a> tag
 - What is an absolute URL?
   An absolute URL is a full URL.
 - What is a relative URL?
