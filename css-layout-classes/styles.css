@@ -23,3 +23,7 @@
 .column-two-thirds {
   flex-basis: calc(100% / 1);
 }
+
+.column-full {
+  flex-basis: calc(100% / 1);
+}
