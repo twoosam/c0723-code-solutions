@@ -18,10 +18,10 @@ select {
 }
 
 label {
+  display: block;
   font-family: 'Brandon Grotesque', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  src: url('BrandonGrotesque-Regular.woff2') format('woff2');
+  font-weight: normal;
   text-transform: uppercase;
   font-size: 10px;
 }
@@ -38,24 +38,21 @@ button {
   font-family: 'Brandon Grotesque', sans-serif;
   font-style: normal;
   font-weight: normal;
-  src: url('BrandonGrotesque-Regular.woff2') format('woff2');
   text-transform: uppercase;
   font-size: 10px;
 }
 
 #engineers {
-  background-color: rgb(243, 243, 243);
   font-family: 'Brandon Grotesque', sans-serif;
   font-style: normal;
   font-weight: normal;
-  src: url('BrandonGrotesque-Regular.woff2') format('woff2');
+  background-color: rgb(243, 243, 243);
 }
 
 h3 {
   font-family: 'Brandon Grotesque', sans-serif;
   font-style: normal;
   font-weight: 500;
-  src: url('BrandonGrotesque-Medium.woff2') format('woff2');
   color: rgb(236, 93, 87);
   text-transform: uppercase;
   text-align: center;
