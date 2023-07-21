@@ -18,11 +18,12 @@ body {
 }
 
 .img {
-  width: 35%;
+  width: 30%;
   margin: 0 auto;
   display: block;
   border: 2px solid white;
   border-radius: 50%;
+  background-color: white;
 }
 
 .column-one-third {
