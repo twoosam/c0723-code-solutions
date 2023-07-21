@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 400px;
+}
+
+input,
+select {
+  width: 400px;
+  height: 30px;
+  border-radius: 6px;
+  border-color: rgb(166, 170, 169);
+  border-style: solid;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+button {
+  color: white;
+  background-color: rgb(236, 93, 87);
+  border-color: rgb(236, 93, 87);
+  border-radius: 12px;
+  border-style: solid;
+  margin-left: 330px;
+  width: 70px;
+  height: 25px;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+#engineers {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background-color: rgb(243, 243, 243);
+}
+
+h3 {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(236, 93, 87);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
