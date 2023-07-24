@@ -10,7 +10,7 @@
 }
 
 .img {
-  width: 20%;
+  width: 60%;
   margin: 0 auto;
   display: block;
 }
@@ -22,6 +22,10 @@
 .img-border {
   border-radius: 50%;
   background-color: white;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
 }
 
 .column-full {
