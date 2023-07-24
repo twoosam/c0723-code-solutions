@@ -11,8 +11,8 @@
 
 .img {
   width: 60%;
-  margin: 0 auto;
-  display: block;
+  margin-top: 20%;
+  margin-left: 20%;
 }
 
 .column-one-third {
@@ -40,4 +40,9 @@ p {
   font-style: normal;
   font-weight: 400;
   text-align: center;
+}
+
+p {
+  padding-left: 1em;
+  padding-right: 1em;
 }
