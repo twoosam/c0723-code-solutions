@@ -5,29 +5,23 @@
   background-color: rgb(25, 150, 218);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .row {
   display: flex;
 }
 
-body {
-  margin: 0;
-}
-
 .img {
-  width: 30%;
+  width: 20%;
   margin: 0 auto;
   display: block;
-  border: 2px solid white;
-  border-radius: 50%;
-  background-color: white;
 }
 
 .column-one-third {
   flex-basis: calc(100% / 3);
+}
+
+.img-border {
+  border-radius: 50%;
+  background-color: white;
 }
 
 .column-full {
