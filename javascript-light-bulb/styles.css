@@ -1,0 +1,34 @@
+.background {
+  display: flex;
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.click-button.light {
+  background-color: rgb(250, 234, 132);
+}
+
+.click-button.dark {
+  background-color: rgb(37, 37, 37);
+}
+
+.background.light {
+  background-color: rgb(254, 249, 241);
+  background-size: cover;
+}
+
+.background.dark {
+  background-color: rgb(17, 17, 17);
+  background-size: cover;
+}
+
+.click-button {
+  border-radius: 50%;
+  background-color: rgb(250, 234, 132);
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
