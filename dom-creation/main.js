@@ -67,29 +67,38 @@ const pokedex = [
 ];
 
 function renderPokemon(pokemon) {
-  const divOuter = document.createElement('div');
-  divOuter.className = 'column-third';
-  const div = document.createElement('div');
-  div.className = 'pokemond-card';
-  document.body.appendChild(div);
-  return divOuter;
+  const $divOuter = document.createElement('div');
+  $divOuter.setAttribute('class', 'column-third');
+
+  const $div = document.createElement('div');
+  $div.setAttribute('class', 'pokemon-card');
+  $divOuter.appendChild($div);
+
+  const $img = document.createElement('img');
+  const $imgContent = document.createTextNode('');
+  $img.appendChild($imgContent);
+  $div.appendChild($img);
+
+  const $divInner = document.createElement('div');
+  $divInner.className = 'pokemon-card-text';
+  $div.appendChild($divInner);
+  const $h2 = document.createElement('h2');
+  const $h2Content = document.createTextNode('');
+  $h2.appendChild($h2Content);
+  $divInner.appendChild($h2);
+  const $h3 = document.createElement('h3');
+  const $h3Content = document.createTextNode('');
+  $h3.appendChild($h3Content);
+  $divInner.appendChild($h3);
+  const $p = document.createElement('p');
+  const $pContent = document.createTextNode('');
+  $p.appendChild($pContent);
+  $divInner.appendChild($p);
+  return $divOuter;
 }
-renderPokemon();
-/*
-const div = document.createElement('div');
-div.className = 'pokemond-card';
-const img = document.createElement('img');
-const imgContent = document.createTextNode('src="images/pikachu.png"');
-img.appendChild(imgContent);
-const divInner = document.createElement('div');
-divInner.className = 'pokemon-card-text';
-const h2 = document.createElement('h2');
-const h2Content = document.createTextNode('Pikachu');
-h2.appendChild(h2Content);
-const h3 = document.createElement('h3');
-const h3Content = document.createTextNode('#025');
-h3.appendChild(h3Content);
-const p = document.createElement('p');
-const pContent = document.createTextNode('Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.');
-p.appendChild(pContent);
-*/
+
+const $row = document.querySelector('.row');
+for (let i = 0; i < pokedex.length; i++) {
+  const $pokemon = renderPokemon(pokedex[i]);
+  $row.appendChild($pokemon);
+}
