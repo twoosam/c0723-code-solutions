@@ -18,7 +18,6 @@ function tabs(event) {
       } else {
         $viewNode[i].setAttribute('class', 'view hidden');
       }
-      console.log($viewNode[i]);
     }
   }
 }
