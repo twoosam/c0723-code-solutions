@@ -13,11 +13,12 @@ function tabs(event) {
     }
     const description = event.target.getAttribute('data-view');
     for (let i = 0; i < $viewNode.length; i++) {
-      if (description === $viewNode[i]) {
+      if (description === $viewNode[i].getAttribute('data-view')) {
         $viewNode[i].setAttribute('class', 'view');
       } else {
         $viewNode[i].setAttribute('class', 'view hidden');
       }
+      console.log($viewNode[i]);
     }
   }
 }
