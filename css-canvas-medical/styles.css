@@ -49,3 +49,28 @@
 .box-bottom {
   background-color: rgb(250, 250, 250);
 }
+
+h1 {
+  font-family: 'Tiempos Headline', serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.title h1 {
+  color: rgb(10, 66, 101);
+}
+
+.button {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  background-color: white;
+  color: rgb(160, 160, 160);
+}
+
+.contact-button .button {
+  border: 2px solid rgb(41, 68, 100);
+  color: white;
+  background-color: rgb(41, 68, 100);
+}
