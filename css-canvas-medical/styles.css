@@ -34,11 +34,15 @@
   right: 325px;
   bottom: 0;
   left: 20px;
+  color: white;
 }
 
 .box {
   text-align: center;
   background-color: rgb(250, 250, 250);
+  margin-top: 40px;
+  color: rgb(110, 110, 110);
+  padding-bottom: 20px;
 }
 
 .box-dark {
@@ -73,4 +77,24 @@ h1 {
   border: 2px solid rgb(41, 68, 100);
   color: white;
   background-color: rgb(41, 68, 100);
+}
+
+.column-full h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.column-one-half h4 {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.ready-row h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: rgb(160, 160, 160);
 }
