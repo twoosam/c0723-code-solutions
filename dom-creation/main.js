@@ -75,25 +75,25 @@ function renderPokemon(pokemon) {
   $divOuter.appendChild($div);
 
   const $img = document.createElement('img');
-  const $imgContent = document.createTextNode('');
-  $img.appendChild($imgContent);
+  $img.setAttribute('src', pokemon.imageUrl);
   $div.appendChild($img);
 
   const $divInner = document.createElement('div');
-  $divInner.className = 'pokemon-card-text';
+  $divInner.setAttribute('class', 'pokemon-card-text');
   $div.appendChild($divInner);
+
   const $h2 = document.createElement('h2');
-  const $h2Content = document.createTextNode('');
-  $h2.appendChild($h2Content);
+  $h2.textContent = pokemon.name;
   $divInner.appendChild($h2);
+
   const $h3 = document.createElement('h3');
-  const $h3Content = document.createTextNode('');
-  $h3.appendChild($h3Content);
+  $h3.textContent = '#' + pokemon.number;
   $divInner.appendChild($h3);
+
   const $p = document.createElement('p');
-  const $pContent = document.createTextNode('');
-  $p.appendChild($pContent);
+  $p.textContent = pokemon.description;
   $divInner.appendChild($p);
+
   return $divOuter;
 }
 
