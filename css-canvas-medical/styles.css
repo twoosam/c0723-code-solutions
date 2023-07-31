@@ -30,17 +30,25 @@
 
 .img {
   width: 100%;
-  position: relative;
 }
 
 .wrapper {
   position: relative;
 }
 
+.overlay {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .text-over-img {
   position: absolute;
   top: 0;
-  right: 325px;
+  right: 350px;
   bottom: 0;
   left: 20px;
   color: white;
@@ -151,6 +159,8 @@ h1 {
   border: 2px solid rgb(41, 68, 100);
   color: white;
   background-color: rgb(41, 68, 100);
+  padding: 3px 7px;
+  border-radius: 5%;
 }
 
 .button-started {
@@ -162,6 +172,7 @@ h1 {
   color: white;
   background-color: rgb(41, 68, 100);
   padding: 5px 15px;
+  border-radius: 5%;
 }
 
 .column-full h2 {
@@ -175,4 +186,12 @@ h1 {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
+}
+
+.locations {
+  margin-left: 20%;
+}
+
+.locations2 {
+  margin-right: 20%;
 }
