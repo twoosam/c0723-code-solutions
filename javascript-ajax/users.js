@@ -6,9 +6,9 @@ xhr.addEventListener('load', function () {
   console.log(xhr.status);
   console.log(xhr.response);
   for (let i = 0; i < xhr.response.length; i++) {
-    const newLi = document.createElement('li');
-    newLi.textContent = xhr.response[i].name;
-    $userList.appendChild(newLi);
+    const $newLi = document.createElement('li');
+    $newLi.textContent = xhr.response[i].name;
+    $userList.appendChild($newLi);
   }
 });
 xhr.send();
