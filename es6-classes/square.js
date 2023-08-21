@@ -6,6 +6,11 @@ class Square extends Shape {
     super(width * width, width * 4);
     this.width = width;
   }
+
+  describe() {
+    return `${super.describe()}, Width: ${this.width}`;
+  }
 }
-const squareInstance = new Square('3');
-console.log(squareInstance);
+
+const square = new Square(3);
+console.log(square.describe());

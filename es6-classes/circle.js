@@ -6,6 +6,10 @@ class Circle extends Shape {
     super(Math.PI * Math.pow(radius, 2), 2 * Math.PI * radius);
     this.radius = radius;
   }
+
+  describe() {
+    return `${super.describe()}, Radius: ${this.radius}}`;
+  }
 }
-const circleInstance = new Circle('3');
-console.log(circleInstance);
+const circle = new Circle(3);
+console.log(circle.describe());

@@ -5,6 +5,10 @@ class Shape {
     this.area = area;
     this.perimeter = perimeter;
   }
+
+  describe() {
+    return `Area: ${this.area}, Perimeter: ${this.perimeter}`;
+  }
 }
-const shapeInstance = new Shape('9', '12');
-console.log(shapeInstance);
+const shape = new Shape(9, 12);
+console.log(shape.describe());
