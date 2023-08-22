@@ -6,6 +6,6 @@ const priceObjects = prices.map((price, salePrice) => {
 console.log('Price objects:', priceObjects);
 
 const formattedPrices = prices.map((price) => {
-  return `$${price}`;
+  return `$${price.toFixed(2)}`;
 });
 console.log('Formatted prices:', formattedPrices);

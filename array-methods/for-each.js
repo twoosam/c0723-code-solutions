@@ -1,12 +1,8 @@
 const values = [10, 1, 22, 23, 41, 5, 18, 7, 80, 9];
-const orderedValues = [];
-values.forEach((value) => {
-  orderedValues.push(value);
-});
-console.log('orderedValues:', orderedValues);
+console.log('In order:');
+values.forEach((value) => console.log(value));
 
-const reversedValues = [];
-values.forEach((value) => {
-  reversedValues.unshift(value);
-});
-console.log('reversedValues:', reversedValues);
+console.log('Reverse order:');
+values.forEach((reverseValue, index) =>
+  console.log(values[values.length - 1 - index])
+);

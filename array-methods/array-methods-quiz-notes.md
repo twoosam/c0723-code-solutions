@@ -13,8 +13,8 @@ After completing this exercise, you should be able to discuss or answer the foll
     Looping through all elements in an array.
 - `Array.map`: - What does `Array.map` do?
   Creates a new array populated with the results of calling a provided function on every element in the array. - What should the callback function return?
-  Return a value as a single element in the new array. - What is `Array.map` useful for?
-  Copying and iterating over all elements in an array.
+  Returns a transformed element in the new array. - What is `Array.map` useful for?
+  Iterating and modifying over all elements in a new array.
 - `Array.filter`:
   - What does `Array.filter` do?
     Creates a shallow copy of a portion of an array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
