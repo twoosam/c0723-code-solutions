@@ -7,15 +7,15 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is an "event" in React?
   An action that could be triggered as a result of the usre action or system generated event.
 - What is an "event handler"? Which component declares the handler?
-  Functions that will be triggered in response to interactions like clicking. The CustomButton component.
+  Functions that will be triggered in response to interactions like clicking. Event handlers are declared by the parent of the component.
 - How do you pass an event handler to a React component?
   Declare an event handler function and then pass it to the onClick prop.
 - What is the naming convention for event handlers?
-  camelCase naming convention
+  camelCase naming convention and starts with 'handle'
 - What is an "event handler prop"? Which component declares the prop?
   Event handlers are defined inside a component so they can access the props. Event handlers can be declared in a parent and pass it as a prop in a child.
 - What are some custom event handler props a component may wish to define?
-  onCustomClick
+  onCustomClick, show/hide
 - What is the naming convention for custom event handler props?
   Start with on, followed by a capital letter, for example: Click (onClick).
 

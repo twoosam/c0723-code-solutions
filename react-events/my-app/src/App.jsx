@@ -5,7 +5,7 @@ import './App.css';
 import CustomButton from './CustomButton';
 
 function handleCustomClick(text) {
-  alert(text);
+  alert(`Clicked ${text}`);
 }
 
 function App() {
