@@ -13,9 +13,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - Why can't we just maintain state in a local variable?
   React does not keep track of local variables. They do not persist between renders and changes to local variables won't trigger renders.
 - What two actions happen when you call a `state setter` function?
-  It returns the current state and
+  It returns the new value of current state
 - When does the local `state variable` get updated with the new value?
-  After calling the setter function which is triggered from clicking the button.
+  Once toggleButton gets recalled.
 
 ## Notes
 
