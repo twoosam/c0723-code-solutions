@@ -8,19 +8,11 @@ export default function ToggleButton({ text, color }) {
     setIsClicked(!isClicked);
     console.log('after setter', isClicked);
   };
-  if (isClicked) {
-    return (
-      <button
-        onClick={handleClick}
-        style={{ backgroundColor: color, color: 'black' }}>
-        {text}
-      </button>
-    );
-  }
+  const backgroundChange = isClicked ? color : 'white';
   return (
     <button
       onClick={handleClick}
-      style={{ backgroundColor: 'white', color: 'black' }}>
+      style={{ backgroundColor: backgroundChange, color: 'black' }}>
       {text}
     </button>
   );
