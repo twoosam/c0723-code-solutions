@@ -1,0 +1,23 @@
+#root {
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.forSlider {
+  height: 30px;
+  width: 75px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+}
