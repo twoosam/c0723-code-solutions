@@ -8,7 +8,7 @@ export default function RegistrationFormControlled() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   return (
-    <form method="post" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <label>
         Username:
         <input
