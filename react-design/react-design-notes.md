@@ -5,10 +5,11 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the phases in the React design process?
-
+  Identify Components, Identify State, Identify Events
 - How does data flow in React?
-
+  Connecting components together allows data to flow through them.
 - How can children components modify state in their parents?
+  Passing event handlers as props.
 
 ## Notes
 
