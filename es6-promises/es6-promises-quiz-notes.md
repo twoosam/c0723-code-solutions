@@ -9,9 +9,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What are the three states a Promise can be in?
   Pending, fullfilled, rejected
 - How do you handle the fulfillment of a Promise?
-  When the promise is fulfilled, the handlers queued up by a promise's then method are called.
+  Using the .then method on the Promise.
 - How do you handle the rejection of a Promise?
-  The catch method of Promise instances schedules a function to be called when the promise is rejected. It immediately reutrns an equivalent Promise object.
+  Using the .catch method on the Promise.
 
 ## Notes
 
