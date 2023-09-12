@@ -23,7 +23,7 @@ const grades = {
 
 const app = express();
 
-// let nextId = 1;
+let nextId = 1;
 
 app.use(express.json());
 
@@ -36,7 +36,13 @@ app.get('/api/grades', (req, res) => {
   res.json(array);
 });
 
-// app.post('/api/grades', (req, res) => {});
+app.post('/api/grades', (req, res) => {
+  const data = req.body;
+  data.id = nextId;
+  grades[nextId] = data;
+  res.status(201).json(data);
+  nextId++;
+});
 
 app.listen(8080, () => {
   console.log('Express server listening on port 8080');
