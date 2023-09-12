@@ -35,7 +35,7 @@ app.get('/api/grades', (req, res) => {
 app.delete('/api/grades/:id', (req, res) => {
   console.log(req.method);
   const id = Number(req.params.id);
-  if (grades[id] !== id) {
+  if (!grades[id]) {
     res.sendStatus(404);
     return;
   }
