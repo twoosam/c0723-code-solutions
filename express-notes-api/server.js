@@ -33,7 +33,7 @@ app.get('/api/notes/:id', async (req, res) => {
     const jsonData = await readDataJson();
     console.log(req.method);
     const id = Number(req.params.id);
-    if (id < 0) {
+    if (isNaN(id) || id < 0) {
       res.status(400).json({ error: 'id must be a positive integer' });
       return;
     }
@@ -73,7 +73,7 @@ app.delete('/api/notes/:id', async (req, res) => {
     const jsonData = await readDataJson();
     console.log(req.method);
     const id = Number(req.params.id);
-    if (id < 0) {
+    if (isNaN(id) || id < 0) {
       res.status(400).json({ error: 'id must be a positive integer' });
       return;
     }
@@ -96,7 +96,7 @@ app.put('/api/notes/:id', async (req, res) => {
     console.log(req.method);
     const id = Number(req.params.id);
     const { content } = req.body;
-    if (id < 0) {
+    if (isNaN(id) || id < 0) {
       res.status(400).json({ error: 'id must be a positive integer' });
       return;
     }
