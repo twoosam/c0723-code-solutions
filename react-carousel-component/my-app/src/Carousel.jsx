@@ -21,14 +21,12 @@ export default function Carousel({ images }) {
     <div className="box">
       <div className="row">
         <PrevButton
-          current={currentIndex}
           onSelect={() =>
             setCurrentIndex((currentIndex - 1 + images.length) % images.length)
           }
         />
         <Banner image={images[currentIndex]} />
         <NextButton
-          current={currentIndex}
           onSelect={() => setCurrentIndex((currentIndex + 1) % images.length)}
         />
       </div>
