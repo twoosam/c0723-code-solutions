@@ -62,7 +62,7 @@ app.post('/api/grades', async (req, res, next) => {
       res.status(400).json('Course field is required');
       return;
     }
-    if (!score || isNaN(score) || score <= 0) {
+    if (!score || isNaN(score) || score <= 0 || score > 100) {
       res.status(400).json('Score must be a number from 0 to 100');
       return;
     }
